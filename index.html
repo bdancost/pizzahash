@@ -8,12 +8,12 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header>
-      <a href="#">
+    <header class="header">
+      <a href="#" class="logo">
         <img src="./images/logo.jpg" alt="Logo da Pizzaria PizzaHash" />
       </a>
 
-      <nav>
+      <nav class="navbar">
         <a href="#home">Home</a>
         <a href="#about">Sobre</a>
         <a href="#menu">Menu</a>
@@ -21,11 +21,11 @@
         <a href="#review">Avaliações</a>
       </nav>
 
-      <div>
+      <div class="icons">
         <div><ion-icon name="person"></ion-icon></div>
         <div><ion-icon name="search"></ion-icon></div>
         <div><ion-icon name="cart"></ion-icon></div>
-        <div><ion-icon name="menu"></ion-icon></div>
+        <div id="menu-btn"><ion-icon name="menu"></ion-icon></div>
       </div>
     </header>
 
@@ -38,13 +38,13 @@
           con ingredientes frescos e de alta qualidade. Venha experimentar uma
           experiência gastrônica unica!
         </p>
-        <a href="#">Faça seu pedido!</a>
+        <a href="#" class="btn">Faça seu pedido!</a>
       </div>
     </section>
 
     <!-- SOBRE / ABOUT -->
     <section id="about">
-      <h1><span>Sobre</span> nós</h1>
+      <h1 class="heading"><span>Sobre</span> nós</h1>
       <div>
         <img src="images/sobre.jpg" alt="Uma Pizzaria em uma esquina" />
       </div>
@@ -63,76 +63,76 @@
           massas incriveis e pizzas unicas. Venha nos visitar e desfrute de uma
           experiência gastrônomica unica.
         </p>
-        <a href="#">Saiba mais</a>
+        <a href="#" class="btn">Saiba mais</a>
       </div>
     </section>
 
     <!-- MENU -->
     <section id="menu">
-      <h1><span>Nosso</span>menu</h1>
+      <h1 class="heading"><span>Nosso</span>menu</h1>
 
       <div class="box-container">
         <div class="box">
           <img src="images/pizza_item_1.jpg" alt="Explosão de Peperoni" />
           <h3>Explosão de Peperoni</h3>
           <div>R$ 55.90 <span>60.99</span></div>
-          <a href="#">Adicionar ao carrinho</a>
+          <a href="#" class="btn">Adicionar ao carrinho</a>
         </div>
 
         <div class="box">
           <img src="images/pizza_item_2.jpg" alt="Aventuras Vegetais" />
           <h3>Aventuras Vegetais</h3>
           <div>R$ 45.90 <span>60.99</span></div>
-          <a href="#">Adicionar ao carrinho</a>
+          <a href="#" class="btn">Adicionar ao carrinho</a>
         </div>
 
         <div class="box">
           <img src="images/pizza_item_3.jpg" alt="Mediterrânea Delicia" />
           <h3>Mediterrânea Delícia</h3>
           <div>R$ 75.90 <span>80.99</span></div>
-          <a href="#">Adicionar ao carrinho</a>
+          <a href="#" class="btn">Adicionar ao carrinho</a>
         </div>
 
         <div class="box">
           <img src="images/pizza_item_4.jpg" alt="Pomodoro do Campo" />
           <h3>Pomodoro do Campo</h3>
           <div>R$ 45.90 <span>55.99</span></div>
-          <a href="#">Adicionar ao carrinho</a>
+          <a href="#" class="btn">Adicionar ao carrinho</a>
         </div>
 
         <div class="box">
           <img src="images/pizza_item_5.jpg" alt="Lusitana Colorida" />
           <h3>Lusitana Colorida</h3>
           <div>R$ 55.90 <span>60.99</span></div>
-          <a href="#">Adicionar ao carrinho</a>
+          <a href="#" class="btn">Adicionar ao carrinho</a>
         </div>
 
         <div class="box">
           <img src="images/pizza_item_6.jpg" alt="Saborosa Lava" />
           <h3>Saborosa Lava</h3>
           <div>R$ 85.90 <span>100.99</span></div>
-          <a href="#">Adicionar ao carrinho</a>
+          <a href="#" class="btn">Adicionar ao carrinho</a>
         </div>
 
         <div class="box">
           <img src="images/pizza_item_7.webp" alt="Calabresa" />
           <h3>Calabresa</h3>
           <div>R$ 40.90 <span>45.99</span></div>
-          <a href="#">Adicionar ao carrinho</a>
+          <a href="#" class="btn">Adicionar ao carrinho</a>
         </div>
 
         <div class="box">
           <img src="images/pizza_item_8.webp" alt="Portuguesa" />
           <h3>Portuguesa</h3>
           <div>R$ 65.90 <span>70.99</span></div>
-          <a href="#">Adicionar ao carrinho</a>
+          <a href="#" class="btn">Adicionar ao carrinho</a>
         </div>
       </div>
     </section>
 
     <!-- PRODUCTS / PROMOÇÕES -->
     <section id="products">
-      <h1><span>Combos e </span>promoções</h1>
+      <h1 class="heading"><span>Combos e </span>promoções</h1>
       <div class="box-container">
         <div class="box">
           <div>
@@ -209,7 +209,7 @@
 
     <!-- REVIEW / AVALIAÇÕES -->
     <section id="review">
-      <h1><span>O que nossos</span>clientes dizem</h1>
+      <h1 class="heading"><span>O que nossos</span>clientes dizem</h1>
 
       <div class="box-container">
         <div class="box">
@@ -279,10 +279,65 @@
       </div>
     </section>
 
-    <!--  Star-Half -->
-    <!-- <ion-icon name="logo-facebook"></ion-icon> Facebook -->
-    <!-- <ion-icon name="logo-instagram"></ion-icon>Instagram -->
-    <!-- <ion-icon name="logo-twitter"></ion-icon> Twitter -->
-    <!-- <ion-icon name="logo-linkedin"></ion-icon>LinkedIn -->
+    <!-- FOOTER  / Rodapé-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-col">
+          <h4 class="heading-footer">Pizza <span>Hash</span></h4>
+          <ul>
+            <li>
+              <a href="#about">Sobre nós</a>
+            </li>
+            <li>
+              <a href="#menu">Menu"></a>
+            </li>
+            <li>
+              <a href="#">Política de privacidade</a>
+            </li>
+            <li>
+              <a href="#">Termos de Serviço</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="heading-footer">Obtenha <span>Ajuda</span></h4>
+          <ul>
+            <li>
+              <a href="#">SFAQ</a>
+            </li>
+            <li>
+              <a href="#">Devoluções"></a>
+            </li>
+            <li>
+              <a href="#">Opções de Pagamento</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="heading-footer">Siga <span>-nos</span></h4>
+          <div class="social-links">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 PizzaHash. Todos os direitos reservados</p>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
