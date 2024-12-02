@@ -98,6 +98,15 @@ section {
   border-radius: 100%;
 }
 
+.menu-toggle {
+  display: none;
+  background: none;
+  color: #fff;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 .header .navbar a {
   margin: 0 1rem;
   font-size: 1.6rem;
@@ -108,6 +117,13 @@ section {
   color: var(--main-color);
   border-bottom: 0.1rem solid var(--main-color);
   padding-bottom: 0.5rem;
+}
+
+.navbar a.active {
+  color: #ff6347;
+  font-weight: bold;
+  border-bottom: 2px solid #ff6347;
+  transition: all 0.3s ease;
 }
 
 .header .icons {
@@ -499,6 +515,27 @@ section {
     background: #fff;
     width: 30rem;
     height: calc(100vh - 9.5rem);
+  }
+
+  .nav-links {
+    display: none; /* Esconde o menu */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    width: 200px;
+    text-align: right;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
   }
 
   .header .navbar a {
