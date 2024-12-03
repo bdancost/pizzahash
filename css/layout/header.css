@@ -1,0 +1,99 @@
+.heading {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 3.5rem;
+  font-size: 4rem;
+}
+
+.heading span {
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.9rem 3rem;
+  font-size: 1.7rem;
+  color: #fff;
+  border-radius: 5px;
+  background: var(--main-color);
+  cursor: pointer;
+}
+
+.btn:hover {
+  letter-spacing: 0.2rem;
+}
+
+/* HEADER */
+
+.header {
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 7%;
+  border-bottom: var(--border);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header .logo img {
+  height: 6.5rem;
+  border-radius: 100%;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  color: #fff;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.header .navbar a {
+  margin: 0 1rem;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.header .navbar a:hover {
+  color: var(--main-color);
+  border-bottom: 0.1rem solid var(--main-color);
+  padding-bottom: 0.5rem;
+}
+
+.navbar a.active {
+  color: #ff6347;
+  font-weight: bold;
+  border-bottom: 2px solid #ff6347;
+  transition: all 0.3s ease;
+}
+
+.header .icons {
+  display: flex;
+  align-items: center;
+}
+
+.header .icons div {
+  margin-left: 2rem;
+}
+
+.header .icons div ion-icon {
+  color: #fff;
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+
+.header .icons div ion-icon:hover {
+  color: var(--main-color);
+}
+
+#menu-btn {
+  display: none;
+}

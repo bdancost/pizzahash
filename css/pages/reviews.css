@@ -1,0 +1,48 @@
+/* REVIEWS / AVALIAÇÕES */
+
+.review .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.review .box-container .box {
+  border: var(--border);
+  border-radius: 5px;
+  background: var(--bg-card);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  padding: 3rem 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.review .box-container .box p {
+  font-size: 1.7rem;
+  color: #ccc;
+  padding: 2rem 0;
+  line-height: 1.8;
+  text-align: justify;
+  text-transform: none;
+}
+
+.user {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 40%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 0.3rem solid var(--main-color);
+  padding: 5px;
+}
+
+.review .box-container .box h3 {
+  padding: 1rem;
+  color: #fff;
+  font-size: 2.2rem;
+}
+
+.review .box-container .box .stars i {
+  color: var(--main-color);
+  font-size: 1.7rem;
+  padding: 0.5rem;
+}
